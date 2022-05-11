@@ -20,7 +20,7 @@ export default function Index() {
 }
 
 export function getStaticProps({ locale }) {
-  console.log("########',locale);
+  console.log("########",locale);
   return {
     props: {
       messages: {
