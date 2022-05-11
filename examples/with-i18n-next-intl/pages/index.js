@@ -6,7 +6,7 @@ import PageLayout from '../components/PageLayout'
 export default function Index() {
   const t = useTranslations('Index')
   const { locale } = useRouter()
-
+  console.log("########",locale);
   return (
     <PageLayout title={t('title')}>
       <p>
@@ -20,7 +20,6 @@ export default function Index() {
 }
 
 export function getStaticProps({ locale }) {
-  console.log("########",locale);
   return {
     props: {
       messages: {
